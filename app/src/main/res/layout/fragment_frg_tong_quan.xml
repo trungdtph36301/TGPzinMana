@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frg.frg_tongQuan">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TPGzinMana 226 Xuân Phương"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/khungden"
+        android:layout_margin="10dp"
+        >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginLeft="10dp"
+          >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Doanh thu ngày"
+              android:textColor="#8F8A8A"
+              android:textSize="22dp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Doanh thu ngày"
+              android:textSize="25dp"
+              android:textColor="@color/black"
+              />
+      </LinearLayout>
+        <TextView
+            android:id="@+id/txt_tongquan_xemCT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem chi tiết >"
+            android:textSize="24dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#039BE5"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</FrameLayout>

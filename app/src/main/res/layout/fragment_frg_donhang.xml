@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frg.frg_donhang"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đơn hàng"
+        android:textSize="25dp"
+        android:textColor="#4B4D56"
+        android:textStyle="bold"
+        android:padding="25dp"
+        android:gravity="center"
+        android:background="@color/white"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tạo đơn và giao hàng"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:gravity="center"
+        android:drawableTop="@drawable/add"
+        android:drawablePadding="10dp"
+        android:background="@drawable/khungden"
+        android:layout_margin="30dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="danh sách đơn hàng"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+        android:drawableStart="@drawable/assignment_24"
+        android:drawablePadding="5dp"
+        android:gravity="start|center"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/baseline_reply_24"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
+
+        android:gravity="start|center"
+        android:padding="5dp"
+        android:text="khách trả hàng"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+</FrameLayout>

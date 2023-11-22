@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    tools:context=".dangKy">
+
+  <ImageView
+
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      app:srcCompat="@drawable/logo1"
+      android:layout_marginBottom="10dp"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Thí chủ muốn đăng ký ư?"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="10dp"
+      android:gravity="start|center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/edthoten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/khung3"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:inputType="text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/edtnameb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/khung3"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:inputType="text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password  "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/edtpasb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:background="@drawable/khung3"
+        android:textColorHint="#D69A9A"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password  "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/edtcfpasb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/khung3"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:inputType="textPassword" />
+  </LinearLayout>
+  <Button
+      android:id="@+id/btndangkyb"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="đăng ký"
+      android:textSize="25dp"
+      android:textColor="@color/white"
+      android:padding="10dp"
+      android:background="@drawable/khung2"
+      />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal"
+
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã có tài khoản?"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/txtquayve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay trở lại"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#039BE5"
+        />
+  </LinearLayout>
+
+
+
+
+</LinearLayout>
