@@ -12,29 +12,19 @@ public class DBhelper extends SQLiteOpenHelper {
 
     public DBhelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+
     }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String tbAdmin= "create table adMin(\n" +
-                "maAdMin integer primary key Autoincrement ,\n" +
-                "tenDN text  not null ,\n" +
-                "hoTen text  not null ,\n" +
-                "matKhau text not null )\n";
+        String tbAdmin= "create table adMin(" +
+                "maAdMin integer primary key Autoincrement ," +
+                "tenDN text  not null ," +
+                "hoTen text  not null ," +
+                "matKhau text not null )";
         sqLiteDatabase.execSQL(tbAdmin);
         String dtAdmin="insert into  adMin values(0,'admin','pham van tai','admin')";
         sqLiteDatabase.execSQL(dtAdmin);
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        if (i!= i1){
-            sqLiteDatabase.execSQL("DROP TABLE IF EXISTS adMin");
-
-            onCreate(sqLiteDatabase);
-        }
-    }
-}
-/*
+        /*
 create table AdMin(
 maAdMin integer primary key Autoincrement ,
 tenDN text  not null ,
@@ -84,3 +74,14 @@ foreign key (maSP) references sanPham(maSP),
 foreign key (maKH)references khachHang(maKH)
 )
  */
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        if (i!= i1){
+            sqLiteDatabase.execSQL("DROP TABLE IF EXISTS adMin");
+
+            onCreate(sqLiteDatabase);
+        }
+    }
+}

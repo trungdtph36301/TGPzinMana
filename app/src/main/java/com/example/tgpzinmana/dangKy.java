@@ -45,11 +45,12 @@ ArrayList<Admin> list= new ArrayList<Admin>();
             public void onClick(View v) {
                 Intent intent= new Intent(dangKy.this,Login.class);
                 String tenDN = edtnameb.getText().toString();
-                String matkhau = edtpasb.getText().toString();
                 String hoten = edthoten.getText().toString();
+                String matkhau = edtpasb.getText().toString();
+
                 String cfpas= edtcfpasb.getText().toString();
-                admin= new Admin(tenDN,hoten,matkhau);
-                if (TextUtils.isEmpty(hoten)||TextUtils.isEmpty(tenDN)|TextUtils.isEmpty(matkhau)|TextUtils.isEmpty(cfpas)){
+                admin= new Admin();
+                if (TextUtils.isEmpty(hoten)||TextUtils.isEmpty(tenDN)|TextUtils.isEmpty(matkhau)){
                     Toast.makeText(dangKy.this, "Vui lòng nhập đầy đủ dl", Toast.LENGTH_SHORT).show();
                 }else{
                     if (cfpas.equalsIgnoreCase(matkhau)){
@@ -58,7 +59,7 @@ ArrayList<Admin> list= new ArrayList<Admin>();
                             list.addAll(adMinDao.selectAll());//lấy toàn bộ sl trong bảng để add vào list
                             //cập nhật lại dl cho adapter
                             Toast.makeText(dangKy.this, "Đăng ký tài khoản thành công", Toast.LENGTH_SHORT).show();
-
+                            startActivity(intent);
                         }else {
                             Toast.makeText(dangKy.this, "Đăng ký không thành công", Toast.LENGTH_SHORT).show();
                         }
@@ -66,8 +67,9 @@ ArrayList<Admin> list= new ArrayList<Admin>();
                         Toast.makeText(dangKy.this, "Vui lòng nhập lại 2 mật khẩu", Toast.LENGTH_SHORT).show();
                     }
                 }
-                startActivity(intent);
+
             }
         });
+
     }
 }
